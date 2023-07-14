@@ -1,0 +1,3 @@
+[submodule "modules/bowl-api"]
+	path = modules/bowl-api
+	url = https://github.com/kuchenkruste/bowl-api
