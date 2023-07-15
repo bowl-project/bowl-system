@@ -7,6 +7,7 @@
 #if defined(OS_UNIX)
     #include <unistd.h>
     #include <errno.h>
+    #include <sys/wait.h>
 #elif defined(OS_WINDOWS)
     #include <direct.h>
     #include <errno.h>
@@ -17,5 +18,9 @@ BowlValue system_exit(BowlStack stack);
 BowlValue system_change_directory(BowlStack stack);
 
 BowlValue system_directory(BowlStack stack);
+
+BowlValue system_execute(BowlStack stack);
+
+BowlValue system_wait(BowlStack stack);
 
 #endif
